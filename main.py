@@ -21,6 +21,7 @@ print("recording...")
 frames = []
 frames_p = np.empty(RATE * RECORD_SECONDS)
 time = np.arange(0, RATE * RECORD_SECONDS)
+print("Hello world")
 
 for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
     data = stream.read(CHUNK)
